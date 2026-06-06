@@ -1,103 +1,34 @@
 [
   {
-    "Nombre": "Arquitectura",
-    "Link": "ARQ"
+    "Nombre": "Ingeniería Informática",
+    "Link": "II"
   },
   {
-    "Nombre": "Construcción Civil",
-    "Link": "CONSTRU"
+    "Nombre": "Ingeniería Civil",
+    "Link": "IC"
   },
   {
-    "Nombre": "Diseño de productos",
-    "Link": "IDP"
+    "Nombre": "Tecnología en Construcciones Civiles",
+    "Link": "TCC"
   },
   {
-    "Nombre": "Ing. Civil",
-    "Link": "CIV"
+    "Nombre": "Lic. en Ciencias Sociales",
+    "Link": "LCS"
   },
   {
-    "Nombre": "Ing. Civil Ambiental",
-    "Link": "ICA"
+    "Nombre": "Administración Industrial",
+    "Link": "ADI"
   },
   {
-    "Nombre": "Ing. Civil de Minas",
-    "Link": "ICM"
+    "Nombre": "Esp. en Analítica de Datos",
+    "Link": "EADAT"
   },
   {
-    "Nombre": "Ing. Civil Electrónica",
-    "Link": "ELO"
+    "Nombre": "Tecnología en Gestión SST",
+    "Link": "TGSST"
   },
   {
-    "Nombre": "Ing. Civil Eléctrica",
-    "Link": "ELI"
-  },
-  {
-    "Nombre": "Ing. Comercial",
-    "Link": "ICOM"
-  },
-    {
-    "Nombre": "Ing. Comercial (Antigua)",
-    "Link": "ICOM-0"
-  },
-  {
-    "Nombre": "Lic. Física",
-    "Link": "FIS"
-  },
-  {
-    "Nombre": "Lic. en Astrofísica",
-    "Link": "AFI"
-  },
-  {
-    "Nombre": "Lic. en Química",
-    "Link": "QUI"
-  },
-  {
-    "Nombre": "Ing. Civil Informática (Antigua)",
-    "Link": "INF-0"
-  },
-  {
-	"Nombre" : "Ing. Civil Informática",
-	"Link" : "INF"
-  },
-  {
-    "Nombre": "Ing. Aviación Comercial",
-    "Link": "IAC"
-  },
-  {
-    "Nombre": "Ing. Civil Industrial",
-    "Link": "ICI"
-  },
-  {
-    "Nombre": "Ing. Civil Matemática",
-    "Link": "MAT"
-  },
-  {
-    "Nombre": "Ing. Civil Mecánica",
-    "Link": "MEC"
-  },
-  {
-    "Nombre": "Ing. Civil Metalúrgica (Antigua)",
-    "Link": "MET",
-    "homologatedTo": "MET5408"
-  },
-    {
-    "Nombre": "Ing. Civil Metalúrgica",
-    "Link": "MET5408"
-  },
-  {
-    "Nombre": "Ing. Civil Química",
-    "Link": "ICQ"
-  },
-  {
-    "Nombre": "Ing. Civil Telemática",
-    "Link": "TEL"
-  },
-  {
-    "Nombre": "Ingeniería en Informática",
-    "Link": "INGINF"
-  },
-  {
-    "Nombre": "Ingeniería en Biotecnología",
-    "Link": "IBT"
+    "Nombre": "Contaduría Pública",
+    "Link": "CP"
   }
 ]

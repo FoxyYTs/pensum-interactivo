@@ -1,0 +1,8 @@
+{
+	"CB": ["#F5C518", "Ciencias Básicas"],
+	"CBI": ["#4CAF50", "Ciencias Básicas de Ingeniería"],
+	"IA": ["#E91E8C", "Ingeniería Aplicada"],
+	"FC": ["#2196F3", "Formación Complementaria"],
+	"PROF": ["#9C27B0", "Profundización"],
+	"TG": ["#FF5722", "Trabajo de Grado"]
+}

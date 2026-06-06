@@ -1,0 +1,14 @@
+{
+	"s1": [
+		["Bases de Datos y Almacenamiento Masivo", "PIN00141", 3, 36, "CB", [], "A"],
+		["Estadística Computacional", "PIN00142", 3, 36, "CB", [], "A"],
+		["Fundamentos de Analítica de Datos", "PIN00143", 3, 36, "CB", [], "A"],
+		["Inteligencia de Negocios", "PIN00144", 3, 36, "IA", [], "A"]
+	],
+	"s2": [
+		["Visualización y Toma de Decisiones", "PIN00145", 3, 36, "IA", [], "A"],
+		["Aspectos Éticos y Seguridad de la Información", "PIN00146", 3, 36, "IA", [], "A"],
+		["Gestión de Proyectos de Analítica", "PIN00147", 3, 36, "IA", [], "A"],
+		["Electiva", "EADAT-EL1", 3, 36, "EL", [], "A"]
+	]
+}

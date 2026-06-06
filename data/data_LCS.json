@@ -1,0 +1,61 @@
+{
+	"s1": [
+		["Habilidades Comunicativas I", "CBS00505", 2, 2, "CB", [], "A"],
+		["Inglés 1", "CDI00053", 2, 2, "CB", [], "A"],
+		["Historia y Legislación de la Educación en Colombia", "CBS00527", 2, 2, "IA", [], "A"],
+		["Introducción a las Ciencias Sociales", "CBS00482", 3, 3, "CBI", [], "A"],
+		["Teorías del Individuo y la Sociedad", "CBS00483", 3, 3, "CBI", [], "A"],
+		["Ética y Ciudadanía", "CBS00525", 2, 2, "FC", [], "A"],
+		["Deporte y Recreación", "EFD00972", 1, 2, "FC", [], "A"]
+	],
+	"s2": [
+		["Habilidades Comunicativas II", "CBS00512", 2, 2, "CB", ["CBS00505"], "A"],
+		["Inglés 2", "CDI00054", 2, 2, "CB", ["CDI00053"], "A"],
+		["Teorías y Modelos de Currículo", "CBS00529", 2, 2, "CBI", [], "A"],
+		["Pedagogía 1: Nuevas Tecnologías para la Pedagogía", "CBS00530", 2, 2, "CBI", [], "A"],
+		["Historia Antigua", "CBS00484", 3, 3, "CBI", [], "A"],
+		["Pensamiento Político I: Grecia, Roma y Edad Media", "CBS00485", 3, 3, "IA", [], "A"],
+		["Electiva I", "LCS-EL1", 2, 2, "EL", [], "A"]
+	],
+	"s3": [
+		["Inglés 3", "CDI00055", 2, 2, "CB", ["CDI00054"], "A"],
+		["Pedagogía 2: Pensamiento Crítico", "CBS00535", 2, 2, "CBI", ["CBS00530"], "A"],
+		["Pensamiento Político II: Democracia, República y Totalitarismo", "CBS00487", 3, 3, "IA", ["CBS00485"], "A"],
+		["Historia Medieval", "CBS00488", 3, 3, "CBI", ["CBS00484"], "A"],
+		["Estadística Aplicada a las Ciencias Sociales", "CBS00489", 2, 2, "CBI", [], "A"],
+		["Didáctica de las Ciencias Sociales I", "CBS00490", 2, 2, "CBI", [], "A"],
+		["Electiva II", "LCS-EL2", 2, 2, "EL", [], "A"]
+	],
+	"s4": [
+		["Inglés 4", "CDI00056", 2, 2, "CB", ["CDI00055"], "A"],
+		["Práctica 1: Metodologías en el Aula", "CBS00538", 4, 2, "IA", [], "A"],
+		["Pedagogía 3: Pedagogía para la Paz", "CBS00539", 2, 2, "CBI", ["CBS00535"], "A"],
+		["Pensamiento Político III", "CBS00492", 3, 3, "IA", ["CBS00487"], "A"],
+		["Historia Moderna", "CBS00493", 3, 3, "CBI", ["CBS00488"], "A"],
+		["Didáctica de las Ciencias Sociales II", "CBS00494", 2, 2, "CBI", ["CBS00490"], "A"],
+		["Electiva III", "LCS-EL3", 2, 2, "EL", [], "A"]
+	],
+	"s5": [
+		["Inglés 5", "CDI00057", 2, 2, "CB", ["CDI00056"], "A"],
+		["Práctica 2: Contextos Escolares", "CBS00542", 4, 2, "IA", ["CBS00538"], "A"],
+		["Pedagogía 4: Teorías de Género", "CBS00543", 2, 2, "CBI", ["CBS00539"], "A"],
+		["Pensamiento Político IV", "CBS00496", 3, 3, "IA", ["CBS00492"], "A"],
+		["Historia de Colombia", "CBS00497", 3, 3, "CBI", ["CBS00493"], "A"],
+		["Didáctica de las Ciencias Sociales III", "CBS00498", 2, 2, "CBI", ["CBS00494"], "A"]
+	],
+	"s6": [
+		["Metodología de la Investigación", "CBS00526", 2, 2, "CB", [], "A"],
+		["Inglés 6", "CDI00058", 2, 2, "CB", ["CDI00057"], "A"],
+		["Práctica 3: Observación de la Enseñanza", "CBS00499", 8, 2, "IA", ["CBS00542"], "A"],
+		["Optativa I", "LCS-OPT1", 3, 3, "PROF", [], "A"],
+		["Optativa II", "LCS-OPT2", 3, 3, "PROF", [], "A"]
+	],
+	"s7": [
+		["Práctica 4: Experiencia Pedagógica", "CBS00554", 12, 2, "IA", ["CBS00499"], "A"],
+		["Trabajo de Grado 1", "CBS00553", 5, 1, "TG", [], "A"]
+	],
+	"s8": [
+		["Práctica 5: Ejercicio de la Enseñanza", "CBS00556", 12, 2, "IA", ["CBS00554"], "A"],
+		["Trabajo de Grado 2 y Simposio", "CBS00555", 5, 1, "TG", ["CBS00553"], "A"]
+	]
+}

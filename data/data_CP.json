@@ -1,0 +1,82 @@
+{
+	"s1": [
+		["Matemáticas", "CBS00001", 4, 6, "CB", [], "A"],
+		["Humanidades 1 (Cultura Contemporánea)", "CBS00031", 2, 4, "FC", [], "A"],
+		["Habilidades Comunicativas", "CBS00427", 4, 6, "CB", [], "A"],
+		["Introducción al Área Profesional", "ADM00863", 2, 2, "CBI", [], "A"],
+		["Fundamentos de Economía", "ADM00864", 2, 4, "CBI", [], "A"],
+		["Fundamentos de Contabilidad", "ADM00865", 3, 4, "CBI", [], "A"],
+		["Pedagogía Constitucional", "CBS00098", 2, 2, "FC", [], "A"]
+	],
+	"s2": [
+		["Humanidades 2 (Cultura Política)", "CBS00032", 2, 4, "FC", [], "A"],
+		["Álgebra y Programación Lineal", "CBS00421", 3, 4, "CB", ["CBS00001"], "A"],
+		["Informática Empresarial", "ADM00869", 2, 2, "CB", [], "A"],
+		["Economía Política", "ADM00866", 2, 2, "CBI", ["ADM00864"], "A"],
+		["Hermenéutica Jurídica", "ADM00867", 2, 2, "CBI", ["CBS00098"], "A"],
+		["Contabilidad de Recursos Financieros", "ADM00868", 4, 6, "CBI", ["ADM00865"], "A"],
+		["Ética", "CBS00103", 2, 2, "FC", [], "A"]
+	],
+	"s3": [
+		["Humanidades 3 (Geopolítica)", "CBS00033", 2, 4, "FC", [], "A"],
+		["Estadística", "CBS00074", 3, 4, "CB", [], "A"],
+		["Fundamentos de Administración", "ADM00199", 2, 4, "CBI", [], "A"],
+		["Microeconomía", "ADM00870", 2, 4, "CBI", ["ADM00864"], "A"],
+		["Legislación Societaria y Comercial", "ADM00871", 3, 4, "IA", ["CBS00098"], "A"],
+		["Contabilidad de Inversión y Financiación", "ADM00872", 4, 6, "IA", ["ADM00868"], "A"],
+		["Ecología", "CAG00100", 2, 4, "FC", [], "A"]
+	],
+	"s4": [
+		["Investigación de Operaciones", "ING00026", 3, 4, "CB", ["CBS00421"], "A"],
+		["Matemáticas Financieras", "ADM00779", 3, 4, "CBI", ["CBS00421"], "A"],
+		["Macroeconomía", "ADM00873", 2, 4, "CBI", ["ADM00870"], "A"],
+		["Legislación Laboral", "ADM00874", 2, 2, "IA", ["CBS00098"], "A"],
+		["Presentación y Revelación de Estados Financieros", "ADM00875", 4, 4, "IA", ["ADM00872"], "A"],
+		["Gestión Humana", "ADM00876", 3, 4, "IA", ["ADM00199"], "A"],
+		["Deporte, Arte y Recreación", "EFD00230", 1, 2, "FC", [], "A"]
+	],
+	"s5": [
+		["Economía Colombiana", "ADM00877", 3, 4, "CBI", ["ADM00866"], "A"],
+		["Contabilidad de Fenómenos Societarios", "ADM00878", 3, 4, "IA", ["ADM00875"], "A"],
+		["Introducción a los Sistemas de Costos", "ADM00879", 4, 6, "IA", ["ADM00875"], "A"],
+		["Finanzas Internacionales", "ADM00880", 3, 4, "IA", ["ADM00779"], "A"],
+		["Administración Contemporánea", "ADM00881", 2, 4, "CBI", ["ADM00199"], "A"]
+	],
+	"s6": [
+		["Finanzas Públicas", "ADM00882", 2, 4, "IA", ["ADM00870"], "A"],
+		["Contabilidad de Actividades Especiales", "ADM00883", 2, 2, "IA", ["ADM00868"], "A"],
+		["Sistemas Contables", "ADM00884", 4, 4, "IA", ["ADM00875"], "A"],
+		["Sistemas de Gestión de Costos", "ADM00885", 4, 4, "IA", ["ADM00879"], "A"],
+		["Mercado de Capitales", "ADM00886", 3, 4, "IA", ["ADM00880"], "A"],
+		["Teoría Contable", "ADM00887", 2, 2, "IA", ["ADM00875"], "A"]
+	],
+	"s7": [
+		["Contabilidad Ambiental", "ADM00157", 2, 4, "IA", ["ADM00868", "CAG00100"], "A"],
+		["Metodología de la Investigación", "ADM00216", 3, 4, "IA", ["ADM00887"], "A"],
+		["Presupuestos", "ADM00888", 4, 4, "IA", ["ADM00885"], "A"],
+		["Finanzas Corporativas", "ADM00889", 3, 4, "IA", ["ADM00880"], "A"],
+		["Fundamentos de Control", "ADM00890", 2, 2, "IA", ["ADM00875"], "A"],
+		["Profundización / Electiva Práctica", "CP-EL1", 2, 2, "EL", [], "A"]
+	],
+	"s8": [
+		["Fundamentos de Contabilidad Pública", "ADM00891", 2, 4, "IA", ["ADM00868"], "A"],
+		["Contabilidad de Gestión", "ADM00892", 4, 4, "IA", ["ADM00885"], "A"],
+		["Proceso de Investigación Contable", "ADM00893", 3, 4, "IA", ["ADM00216"], "A"],
+		["Legislación Tributaria", "ADM00894", 4, 4, "IA", ["ADM00875"], "A"],
+		["Aseguramiento y Revisoría Fiscal", "ADM00895", 4, 4, "IA", ["ADM00890"], "A"],
+		["Emprendimiento Empresarial", "ADM00896", 2, 4, "IA", [], "A"]
+	],
+	"s9": [
+		["Formulación y Evaluación de Proyectos", "ADM00796", 3, 4, "IA", ["ADM00779"], "A"],
+		["Negocios Internacionales", "ADM00897", 2, 4, "IA", ["ADM00870"], "A"],
+		["Contabilidad Pública y Control Social", "ADM00898", 2, 4, "IA", ["ADM00891"], "A"],
+		["Procedimiento Tributario", "ADM00899", 3, 4, "IA", ["ADM00894"], "A"],
+		["Control Fiscal", "ADM00900", 3, 4, "IA", ["ADM00895"], "A"],
+		["Profundización / Régimen Tributario", "CP-PROF1", 2, 2, "PROF", [], "A"],
+		["Profundización / Estrategias Gerenciales", "CP-PROF2", 2, 2, "PROF", [], "A"],
+		["Cátedra para la Paz", "CBS00428", 0, 2, "FC", [], "A"]
+	],
+	"s10": [
+		["Seminario de Grado / Práctica Profesional", "ADM00905", 8, 8, "TG", [], "A"]
+	]
+}

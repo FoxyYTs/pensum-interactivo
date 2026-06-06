@@ -1,0 +1,9 @@
+{
+	"CB": ["#F5C518", "Ciencias Básicas"],
+	"CBI": ["#4CAF50", "Fundamentos Contables"],
+	"IA": ["#E91E8C", "Contaduría Aplicada"],
+	"FC": ["#2196F3", "Formación Complementaria"],
+	"PROF": ["#9C27B0", "Profundización"],
+	"EL": ["#78909C", "Electiva"],
+	"TG": ["#FF5722", "Seminario de Grado"]
+}

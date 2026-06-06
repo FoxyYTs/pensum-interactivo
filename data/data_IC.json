@@ -1,0 +1,78 @@
+{
+	"s1": [
+		["Geometría", "CBS00024", 3, 4, "CB", [], "A"],
+		["Lengua Materna", "CBS00376", 2, 2, "FC", [], "A"],
+		["Álgebra y Trigonometría", "CBS00406", 3, 3, "CB", [], "A"],
+		["Química General", "CBS00407", 4, 5, "CB", [], "A"],
+		["Introducción al Área Profesional", "ING01000", 2, 2, "CBI", [], "A"],
+		["Dibujo", "ING01509", 3, 4, "CBI", [], "A"]
+	],
+	"s2": [
+		["Física del Movimiento", "CBS00380", 4, 4, "CB", ["CBS00406"], "A"],
+		["Humanidades I", "CBS00506", 2, 2, "FC", [], "A"],
+		["Cálculo Diferencial", "CBS00509", 3, 3, "CB", ["CBS00406"], "A"],
+		["Topografía", "ING01003", 4, 8, "CBI", ["ING01509"], "A"],
+		["Fundamentos de Programación", "ING01462", 3, 3, "CBI", [], "A"],
+		["Deporte, Arte y Recreación", "EFD00533", 1, 2, "FC", [], "A"]
+	],
+	"s3": [
+		["Física de Ondas y Óptica", "CBS00409", 4, 5, "CB", ["CBS00380"], "A"],
+		["Cálculo Integral", "CBS00514", 3, 3, "CB", ["CBS00509"], "A"],
+		["Álgebra Lineal", "CBS00515", 3, 3, "CB", ["CBS00406"], "A"],
+		["Materiales de la Construcción", "ING01463", 3, 4, "CBI", ["CBS00407"], "A"],
+		["Geología para Ingenieros", "ING01511", 3, 4, "CBI", [], "A"]
+	],
+	"s4": [
+		["Cálculo Multivariado", "CBS00410", 3, 3, "CB", ["CBS00514"], "A"],
+		["Estadística y Probabilidades", "CBS00411", 3, 3, "CB", ["CBS00514"], "A"],
+		["Diseño Geométrico de Vías", "ING00116", 4, 8, "IA", ["ING01003"], "A"],
+		["Estática", "ING01512", 3, 4, "CBI", ["CBS00380"], "A"],
+		["Construcción de Edificaciones", "ING01513", 3, 4, "IA", ["ING01463"], "A"],
+		["Pedagogía Constitucional", "CBS00097", 1, 2, "FC", [], "A"]
+	],
+	"s5": [
+		["Ecuaciones Diferenciales", "CBS00518", 3, 3, "CB", ["CBS00410"], "A"],
+		["Costos y Programación de Obras Civiles", "ING00590", 3, 4, "IA", ["ING01513"], "A"],
+		["Mecánica de Fluidos", "ING01514", 3, 4, "CBI", ["CBS00410"], "A"],
+		["Mecánica de Sólidos", "ING01515", 4, 6, "CBI", ["ING01512"], "A"],
+		["Geomática", "ING01516", 3, 4, "CBI", ["ING01003"], "A"]
+	],
+	"s6": [
+		["Mecánica de Suelos", "ING01005", 4, 6, "IA", ["ING01511"], "A"],
+		["Métodos Numéricos", "ING01222", 3, 3, "CBI", ["CBS00518"], "A"],
+		["Hidrología", "ING01517", 3, 4, "IA", ["CBS00411", "ING01516", "ING01514"], "A"],
+		["Análisis Clásico de Estructuras", "ING01518", 3, 4, "IA", ["ING01515"], "A"],
+		["Construcción de Vías", "ING01519", 3, 4, "IA", ["ING00116"], "A"]
+	],
+	"s7": [
+		["Interventoría de Obras Civiles", "ING00595", 3, 4, "IA", ["ING00590"], "A"],
+		["Cimentaciones", "ING01141", 3, 8, "IA", [], "A"],
+		["Hidráulica", "ING01464", 4, 8, "IA", ["ING01517"], "A"],
+		["Análisis Matricial de Estructuras", "ING01520", 3, 4, "IA", ["ING01518"], "A"],
+		["Ingeniería de Tránsito", "ING01521", 3, 4, "IA", [], "A"]
+	],
+	"s8": [
+		["Metodología de la Investigación", "CBS00526", 2, 2, "CB", [], "A"],
+		["Pavimentos", "ING00114", 4, 6, "IA", ["ING01141"], "A"],
+		["Diseño de Estructuras en Hormigón I", "ING01143", 4, 6, "IA", ["ING01520"], "A"],
+		["Acueductos y Alcantarillados", "ING01145", 3, 4, "IA", ["ING01464"], "A"],
+		["Construcción Sostenible", "ING01465", 3, 4, "IA", [], "A"]
+	],
+	"s9": [
+		["Diseño de Estructuras en Hormigón II", "ING01146", 3, 4, "IA", ["ING01143"], "A"],
+		["Estabilidad de Taludes", "ING01164", 3, 3, "IA", ["ING00114"], "A"],
+		["Hidráulica Fluvial", "ING01170", 3, 3, "IA", ["ING01464"], "A"],
+		["Hidrogeología", "ING01260", 3, 3, "IA", ["ING01511", "ING01517"], "A"],
+		["Ética Profesional", "ING01507", 1, 2, "FC", [], "A"],
+		["Línea de Profundización 1", "IC-PROF1", 2, 3, "PROF", [], "A"],
+		["Línea de Profundización 2", "IC-PROF2", 2, 3, "PROF", [], "A"]
+	],
+	"s10": [
+		["Formulación y Evaluación de Proyectos", "ING01147", 3, 3, "IA", [], "A"],
+		["Emprendimiento e Innovación", "ING01148", 3, 3, "IA", [], "A"],
+		["Proyecto Integrador de Aprendizaje", "ING01466", 2, 4, "IA", [], "A"],
+		["Gestión Ambiental", "ING01014", 2, 2, "PROF", [], "A"],
+		["Línea de Profundización 3", "IC-PROF3", 2, 3, "PROF", [], "A"],
+		["Trabajo de Grado / Práctica Profesional", "ING01508", 3, 2, "TG", ["CBS00526"], "A"]
+	]
+}

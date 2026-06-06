@@ -1,0 +1,70 @@
+{
+	"s1": [
+		["Matemáticas", "CBS00401", 3, 4, "CB", [], "A"],
+		["Habilidades Comunicativas I", "CBS00505", 2, 2, "CB", [], "A"],
+		["Humanidades I", "CBS00506", 2, 2, "FC", [], "A"],
+		["Introducción a la Profesión", "ADM01065", 2, 2, "CBI", [], "A"],
+		["Informática Avanzada", "ADM01066", 2, 2, "CBI", [], "A"],
+		["Ecología", "ADM01067", 4, 4, "FC", [], "A"]
+	],
+	"s2": [
+		["Metodología de la Investigación", "CBS00526", 2, 2, "CB", [], "A"],
+		["Economía Colombiana", "ADM00877", 3, 4, "CBI", ["ADM01067"], "A"],
+		["Fundamentos de Economía", "ADM01033", 3, 4, "CBI", [], "A"],
+		["Fundamentos de Administración", "ADM01068", 4, 4, "CBI", [], "A"],
+		["Ética y Ciudadanía", "CBS00525", 2, 2, "FC", [], "A"],
+		["Deportes", "EFD01023", 2, 2, "FC", [], "A"],
+		["Electiva 1", "ADM01069", 2, 2, "EL", [], "A"]
+	],
+	"s3": [
+		["Humanidades 2 (Cultura Política)", "CBS00032", 2, 4, "FC", [], "A"],
+		["Habilidades Comunicativas II", "CBS00512", 2, 2, "CB", [], "A"],
+		["Emprendimiento Empresarial", "ADM00232", 2, 2, "IA", ["ADM01033"], "A"],
+		["Modelos Cuantitativos de Producción", "ADM01070", 3, 4, "CBI", ["CBS00401"], "A"],
+		["Contabilidad General", "ADM01071", 2, 2, "CBI", [], "A"],
+		["Sustentabilidad Organizacional", "ADM01072", 4, 4, "CBI", ["CBS00525"], "A"],
+		["Electiva 2", "ADM01073", 2, 2, "EL", [], "A"]
+	],
+	"s4": [
+		["Legislación Societaria y Comercial", "ADM00871", 3, 4, "IA", [], "A"],
+		["Planeación Estratégica y Prospectiva", "ADM01074", 4, 4, "IA", ["ADM01068"], "A"],
+		["Costos y Presupuestos", "ADM01075", 2, 2, "IA", [], "A"],
+		["Desarrollo de Producto", "ADM01076", 2, 2, "IA", ["ADM00232"], "A"],
+		["Legislación Ambiental", "ADM01077", 2, 2, "IA", [], "A"],
+		["Seguridad y Salud en el Trabajo", "ADM01078", 2, 2, "IA", [], "A"],
+		["Electiva 3", "ADM01079", 2, 2, "EL", [], "A"]
+	],
+	"s5": [
+		["Estadística", "CBS00074", 3, 4, "CB", [], "A"],
+		["Gerencia de Compras", "ADM00059", 3, 4, "IA", [], "A"],
+		["Legislación Laboral", "ADM00874", 2, 2, "IA", [], "A"],
+		["Diseño Organizacional", "ADM01080", 4, 4, "IA", ["ADM01074"], "A"],
+		["Administración de Mercadeo y Ventas", "ADM01081", 3, 4, "IA", ["ADM01074"], "A"],
+		["Optativa 1", "ADM01082", 2, 2, "PROF", [], "A"]
+	],
+	"s6": [
+		["Logística de Transporte y Distribución", "ADM01061", 3, 4, "IA", ["ADM00059"], "A"],
+		["Organización del Trabajo", "ADM01083", 4, 4, "IA", ["ADM01080"], "A"],
+		["Control Estadístico de Procesos y Regresión", "ADM01084", 2, 2, "CBI", ["CBS00074"], "A"],
+		["Gestión de la Tecnología y la Innovación", "ADM01085", 2, 2, "IA", [], "A"],
+		["Gerencia de Personal", "ADM01086", 4, 4, "IA", [], "A"],
+		["Optativa 2", "ADM01087", 2, 2, "PROF", [], "A"]
+	],
+	"s7": [
+		["Formulación y Evaluación de Proyectos", "ADM00027", 3, 4, "IA", ["ADM01075"], "A"],
+		["Planeación y Control de la Producción", "ADM01088", 3, 4, "IA", ["ADM01083"], "A"],
+		["Automatización de Procesos", "ADM01089", 4, 4, "IA", ["ADM01083"], "A"],
+		["Comercio Internacional", "ADM01090", 4, 4, "IA", [], "A"],
+		["Electiva 4", "ADM01091", 2, 2, "EL", [], "A"],
+		["Optativa 3", "ADM01092", 2, 2, "PROF", [], "A"]
+	],
+	"s8": [
+		["Diagnóstico y Evaluación Organizacional", "ADM01093", 4, 4, "IA", [], "A"],
+		["Sistemas Integrados de Gestión", "ADM01094", 4, 4, "IA", [], "A"],
+		["Gerencia de Proyectos", "ADM01095", 4, 4, "IA", ["ADM00027"], "A"],
+		["Optativa 4", "ADM01096", 2, 2, "PROF", [], "A"]
+	],
+	"s9": [
+		["Trabajo de Grado", "ADM01097", 12, 4, "TG", ["ADM01093"], "A"]
+	]
+}

@@ -26,10 +26,8 @@ class Malla {
         this.checkPrer = false;
         this.saveEnabled = false;
         this.isMallaSet = false;
-        this.isMallaRendered = false
         this.showCreditSystem = false;
         this.showCreditStats = false
-        this.canvas = null
 
         this.totalCredits = 0;
         this.totalSubjects = 0;
@@ -64,6 +62,8 @@ class Malla {
             let data = JSON.parse(unparsedData)
             this.currentMalla = data.name;
             this.fullCareerName = data.name
+            console.log("hola")
+            console.log(data.name)
             return Promise.resolve(this.setMallaAndCategories(data.malla, data.categories))
 
         } else {
@@ -97,7 +97,7 @@ class Malla {
                 // Se instancia el ramo y se agrega a la malla en su semestre
                 totalRamos += 1;
                 // Agregado de ramos por semestre
-                if (subject.length >= 7) {
+                if (subject.length === 7) {
                     // Nuevo formato con ramos SCT
                     this.malla[semester][subject[1]] = new this.subjectType(subject[0], subject[1], subject[2], subject[4], subject[5],this.SUBJECTID++, this, subject[3], false ,subject[6])
                 } else {
@@ -158,15 +158,15 @@ class Malla {
         let canvasWidth = width + separator; // for full show svg
         let canvasHeight = height + separator/2
 
-        this.canvas = d3.select(canvasId).append("svg")
+        const canvas = d3.select(canvasId).append("svg")
             .attr("width", canvasWidth)
             .attr("height", canvasHeight)
             .attr("role", "figure");
 
-        this.canvas.append("title")
+        canvas.append("title")
             .text("Malla " + this.fullCareerName)
 
-        const drawer = this.canvas;
+        const drawer = canvas;
         let globalX = separator / 2,
             globalY = 0;
         let isBigBarRendered = false;
@@ -213,10 +213,10 @@ class Malla {
                     let number = parseInt(bar.select("text").text().substr(4));
                     let ramosToSelect;
                 if (bar.node().getBBox().width <= this.subjectType.getDisplayWidth(this.scaleX) * 2 - this.subjectType.getDisplayWidth(this.scaleX) / 2) {
-                    this.canvas.select("#sem" + (number * 2 + 1)).dispatch('click')
+                    d3.select("#sem" + (number * 2 + 1)).dispatch('click')
                 } else {
-                    this.canvas.select("#sem" + number * 2).dispatch('click');
-                    this.canvas.select("#sem" + (number * 2 - 1)).dispatch('click')
+                    d3.select("#sem" + number * 2).dispatch('click');
+                    d3.select("#sem" + (number * 2 - 1)).dispatch('click')
 
                 }
 
@@ -306,13 +306,12 @@ class Malla {
 
             globalX += this.subjectType.getDisplayWidth(this.scaleX) + separator;
         })
-        this.isMallaRendered = true
     }
 
     // Renderiza las descripciones de las categorías
-    showColorDescriptions(className=".color-description") {
+    showColorDescriptions() {
         Object.keys(this.categories).forEach(key => {
-            let color_description = d3.select(className).append("div")
+            let color_description = d3.select(".color-description").append("div")
                 .attr("style", "display:flex;vertical-align:middle;margin-right:15px;");
             let circle_color = color_description.append("svg")
                 .attr("height", "25px")
@@ -348,7 +347,7 @@ class Malla {
     displayCreditSystem() {
         if (!this.showCreditSystem)
             return
-        d3.select("#credits-system").text(this.sct ? 'SCT' : 'USM')
+        d3.select("#credits-system").text(this.sct ? 'SCT' : 'Académicos')
     }
 
     // Actualiza los datos como porcentaje de ramos aprobados etc
@@ -638,7 +637,7 @@ class Malla {
                 document.getElementById("carrColor2").textContent = input.target.value.toUpperCase()
                 document.getElementById('dMalla').setAttribute('download', "data_" + input.target.value.toUpperCase() + '.json')
                 document.getElementById('dColor').setAttribute("download", "colors_" + input.target.value.toUpperCase() + '.json')
-                // console.log(this.generatedCode[0])
+                console.log(this.generatedCode[0])
                 this.generatedCode[0] = input.target.value
 
                 $('[data-toggle="tooltip"]').tooltip()

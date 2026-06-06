@@ -1,0 +1,52 @@
+{
+	"s1": [
+		["Matemáticas", "CBS00001", 4, 6, "CB", [], "A"],
+		["Geometría", "CBS00024", 3, 4, "CB", [], "A"],
+		["Humanidades", "CBS00237", 3, 4, "FC", [], "A"],
+		["Química", "CBS00434", 4, 6, "CB", [], "A"],
+		["Introducción a la Seguridad y la Salud en el Trabajo", "ING01357", 2, 3, "CBI", [], "A"],
+		["Herramientas Informáticas", "ING01358", 2, 3, "CBI", [], "A"]
+	],
+	"s2": [
+		["Física del Movimiento", "CBS00079", 4, 6, "CB", [], "A"],
+		["Dibujo", "ING00963", 3, 4, "CB", ["CBS00024"], "A"],
+		["Emprendimiento Empresarial", "ING01360", 3, 4, "CBI", [], "A"],
+		["Cálculo", "CBS00432", 6, 6, "CB", ["CBS00001"], "A"],
+		["Cultura y Liderazgo", "ING01359", 1, 2, "FC", [], "A"],
+		["Deporte, Arte y Recreación", "EFD00532", 2, 2, "FC", [], "A"]
+	],
+	"s3": [
+		["Estadística", "CBS00074", 3, 4, "CB", [], "A"],
+		["Anatomía y Fisiología del Trabajo", "ING00054", 3, 4, "CBI", [], "A"],
+		["Riesgo Mecánico", "ING01264", 3, 4, "CBI", ["ING01357"], "A"],
+		["Riesgo Biológico", "ING01279", 2, 2, "CBI", [], "A"],
+		["Riesgo Eléctrico", "ING01361", 3, 4, "CBI", ["CBS00079"], "A"],
+		["Fundamentos de Riesgo Químico", "ING01362", 4, 6, "CBI", ["CBS00434"], "A"],
+		["Administración Alineada a la Estrategia Organizacional", "ING01363", 1, 2, "CBI", [], "A"]
+	],
+	"s4": [
+		["Metodología de la Investigación", "ING00740", 3, 4, "CB", [], "A"],
+		["Medicina del Trabajo", "ING00400", 3, 4, "IA", ["ING00054", "CBS00074"], "A"],
+		["Seguridad en Trabajo de Alto Riesgo", "ING00409", 3, 4, "IA", ["ING01264"], "A"],
+		["Fundamentos de Incendios y Explosiones", "ING00969", 3, 4, "IA", ["ING01361"], "A"],
+		["Procesos y Operaciones Seguras", "ING01263", 3, 4, "IA", ["ING01357"], "A"],
+		["Fundamentos de Ventilación Industrial", "ING01364", 3, 4, "IA", ["ING00963", "ING01362"], "A"]
+	],
+	"s5": [
+		["Fundamentos de Ruido y Vibraciones", "ING00972", 3, 4, "IA", ["ING01364"], "A"],
+		["Legislación en Seguridad y Salud en el Trabajo", "ING01367", 3, 4, "IA", [], "A"],
+		["Sistemas de Gestión en SST", "ING01368", 3, 4, "IA", ["ING01363"], "A"],
+		["Fundamentos de Ergonomía", "ING01369", 3, 4, "IA", [], "A"],
+		["Riesgos Sicosociales", "ING01370", 2, 3, "IA", ["ING00400"], "A"],
+		["Ecología y Ambiente", "ING01276", 3, 4, "FC", ["ING00963"], "A"],
+		["Electiva", "TGSST-EL1", 2, 2, "EL", [], "A"]
+	],
+	"s6": [
+		["Gestión del Riesgo de Emergencias y Desastres", "ING01269", 2, 2, "IA", [], "A"],
+		["Riesgos Físicos", "ING01371", 2, 2, "IA", [], "A"],
+		["Sistemas Integrados de Gestión", "ING01372", 2, 2, "IA", ["ING01368"], "A"],
+		["Gestión del Riesgo en Otras Modalidades de Trabajo", "ING01373", 1, 2, "IA", [], "A"],
+		["Ética", "CBS00103", 2, 2, "FC", [], "A"],
+		["Práctica Profesional", "ING00979", 6, 2, "TG", ["ING01276", "ING01367", "ING01368"], "A"]
+	]
+}
