@@ -1,18 +1,18 @@
 {
   "Malla": {
-    "welcomeTitle": "¡Bienvenido a la Malla Interactiva de CARRERA!",
-    "welcomeDesc": "Puedes tachar tus ramos aprobados haciendo click sobre ellos. A medida que vas aprobando ramos, se van liberando los que tienen prerrequisitos. Haz click en cualquier lado para comenzar."
+    "welcomeTitle": "¡Bienvenido al Pénsum Interactivo de CARRERA!",
+    "welcomeDesc": "Puedes tachar tus asignaturas aprobadas haciendo click sobre ellas. A medida que vas aprobando asignaturas, se van liberando las que tienen prerrequisitos. Haz click en cualquier lado para comenzar."
   },
   "Prioridad": {
     "welcomeTitle": "¡Bienvenido a la calculadora de prioridad CARRERA!",
-    "welcomeDesc": "¡Selecciona los ramos por semestre e ingresa tus notas para calcular tu prioridad! Usa las flechas para avanzar de semestre, los ramos aprobados se tacharán automáticamente. Si has cursado un ramo que no esta en la malla, crealo en la tabla de abajo."
+    "welcomeDesc": "¡Selecciona las asignaturas por semestre e ingresa tus notas para calcular tu prioridad! Usa las flechas para avanzar de semestre. Si has cursado una asignatura que no está en el pénsum, créala en la tabla de abajo."
   },
   "Generadora": {
-    "welcomeTitle": "¡Bienvenido a la generadora de mallas!",
-    "welcomeDesc": "¡Crea y modifica una malla a tu gusto! selecciona los ramos de cada semestre y usa las flechas para cambiar de semestre."
+    "welcomeTitle": "¡Bienvenido a la generadora de pénsum!",
+    "welcomeDesc": "¡Crea y modifica un pénsum a tu gusto! Selecciona las asignaturas de cada semestre y usa las flechas para cambiar de semestre."
   },
   "Personal": {
-    "welcomeTitle": "¡Bienvenido a tu propia malla!",
-    "welcomeDesc": "Puedes tachar tus ramos aprobados haciendo click sobre ellos. A medida que vas aprobando ramos, se van liberando los que tienen prerrequisitos. Haz click en cualquier lado para comenzar."
+    "welcomeTitle": "¡Bienvenido a tu pénsum personal!",
+    "welcomeDesc": "Puedes tachar tus asignaturas aprobadas haciendo click sobre ellas. A medida que vas aprobando asignaturas, se van liberando las que tienen prerrequisitos. Haz click en cualquier lado para comenzar."
   }
 }

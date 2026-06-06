@@ -39,7 +39,7 @@ let contact = document.URL.includes("contact")
 let fullCareerName = ""
 let homologatedTo = null
 let homologatedName = ""
-let texts = "Pénsum"
+let texts = "Malla"
 if (mallaPersonal)
     texts = "Personal"
 else if (prioridad)
