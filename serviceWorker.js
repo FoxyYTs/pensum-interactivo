@@ -7,7 +7,6 @@ const PRECACHE_URLS = [
     './index.html',
     './',
     './index.html',
-    './prioridad/',
     './personalizar/',
     './personalizar/malla.html',
     './views/header.html',

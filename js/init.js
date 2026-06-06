@@ -39,7 +39,7 @@ let contact = document.URL.includes("contact")
 let fullCareerName = ""
 let homologatedTo = null
 let homologatedName = ""
-let texts = "Malla"
+let texts = "Pénsum"
 if (mallaPersonal)
     texts = "Personal"
 else if (prioridad)
@@ -118,14 +118,9 @@ if (params.get('SCT') === "false")
         welcomeTexts = datas.pop()[texts]
 
         let home = document.getElementById("goToHome")
-        let calculator = document.getElementById("goToCalculator")
         let generator = document.getElementById("goToGenerator")
         let goToContact = document.getElementById("contact")
         if (!mallaPersonal) {
-            if (!prioridad)
-                calculator.setAttribute("href", relaPath + 'prioridad/?m=' + carr)
-            else
-                calculator.classList.add("active")
             if (!personalizar)
                 generator.setAttribute("href", relaPath + 'personalizar/?m=' + carr)
             else {
