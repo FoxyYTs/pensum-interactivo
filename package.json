@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/booterman98/malla-interactiva.git"
+    "url": "git+https://github.com/FoxyYTs/pensum-interactivo.git"
   },
   "keywords": [
     "USM",
@@ -30,7 +30,7 @@
   "author": "César Paulangelo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BooterMan98/malla-interactiva/issues"
+    "url": "https://github.com/FoxyYTs/pensum-interactivo/issues"
   },
-  "homepage": "https://github.com/BooterMan98/malla-interactiva"
+  "homepage": "https://github.com/FoxyYTs/pensum-interactivo"
 }
