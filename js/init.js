@@ -81,8 +81,13 @@ if (carr) {
 }
 
 
-if (!carr)
-    carr = 'INF'
+let firstVisit = false
+if (!carr) {
+    if (!contact && !personalizar && !mallaPersonal && !prioridad)
+        firstVisit = true
+    else
+        carr = 'INF'
+}
 
 let sct = true
 if (params.get('SCT') === "false")
@@ -170,10 +175,42 @@ if (params.get('SCT') === "false")
             $('#carreras2-nav').append(careers.map(function (values) {
                 return tabTpl2.map(render(values)).join('');
             }));
-            if ( document.querySelector(".overlay-content h1")){
-            document.querySelector(".overlay-content h1").textContent = welcomeTexts["welcomeTitle"]
-            document.querySelector(".overlay-content h5").textContent = welcomeTexts["welcomeDesc"]
-        }
+            if (document.querySelector(".overlay-content h1")) {
+                if (firstVisit) {
+                    document.querySelector(".overlay-content h1").textContent = "Bienvenido al Pensum Interactivo"
+                    document.querySelector(".overlay-content h5").textContent = "Politécnico Colombiano Jaime Isaza Cadavid"
+                    let selector = document.getElementById("careerSelector")
+                    selector.style.display = "block"
+                    let buttonsDiv = document.getElementById("careerButtons")
+                    careers.forEach(function(career) {
+                        let btn = document.createElement("button")
+                        btn.className = "btn btn-primary m-2"
+                        btn.textContent = career.Nombre
+                        btn.addEventListener("click", function(e) {
+                            e.stopPropagation()
+                            carr = career.Link
+                            fullCareerName = career.Nombre
+                            homologatedTo = career["homologatedTo"] || null
+                            localStorage.setItem("currentCarreer", carr)
+                            let url = new URL(window.location.href)
+                            url.searchParams.set('m', carr)
+                            window.history.pushState({}, '', url)
+                            $('.carrera').text(career.Nombre)
+                            home.setAttribute("href", relaPath + '?m=' + carr)
+                            let gen = document.getElementById("goToGenerator")
+                            if (gen) gen.setAttribute("href", relaPath + 'personalizar/?m=' + carr)
+                            removePopUp()
+                            doRendering()
+                        })
+                        buttonsDiv.appendChild(btn)
+                    })
+                    document.getElementById("overlay").onclick = null
+                    document.querySelector(".overlay-content").onclick = null
+                } else {
+                    document.querySelector(".overlay-content h1").textContent = welcomeTexts["welcomeTitle"]
+                    document.querySelector(".overlay-content h5").textContent = welcomeTexts["welcomeDesc"]
+                }
+            }
     })
 // }
 
@@ -321,5 +358,5 @@ function changeCreditsSystem() {
 }
 
 bigPromise.then(() => {
-    doRendering()
+    if (!firstVisit) doRendering()
 })
