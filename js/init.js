@@ -196,7 +196,7 @@ if (params.get('SCT') === "false")
                             url.searchParams.set('m', carr)
                             window.history.pushState({}, '', url)
                             $('.carrera').text(career.Nombre)
-                            home.setAttribute("href", relaPath + '?m=' + carr)
+                            document.getElementById("goToHome").setAttribute("href", relaPath + '?m=' + carr)
                             let gen = document.getElementById("goToGenerator")
                             if (gen) gen.setAttribute("href", relaPath + 'personalizar/?m=' + carr)
                             // Restore normal welcome overlay so doRendering() flow works as usual
