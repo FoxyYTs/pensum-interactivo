@@ -199,7 +199,12 @@ if (params.get('SCT') === "false")
                             home.setAttribute("href", relaPath + '?m=' + carr)
                             let gen = document.getElementById("goToGenerator")
                             if (gen) gen.setAttribute("href", relaPath + 'personalizar/?m=' + carr)
-                            removePopUp()
+                            // Restore normal welcome overlay so doRendering() flow works as usual
+                            document.getElementById("careerSelector").style.display = "none"
+                            document.querySelector(".overlay-content h1").textContent = welcomeTexts["welcomeTitle"].replace("CARRERA", career.Nombre)
+                            document.querySelector(".overlay-content h5").textContent = welcomeTexts["welcomeDesc"]
+                            document.getElementById("overlay").onclick = removePopUp
+                            document.querySelector(".overlay-content").onclick = removePopUp
                             doRendering()
                         })
                         buttonsDiv.appendChild(btn)
