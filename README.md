@@ -2,6 +2,8 @@
 
 Proyecto universitario open-source que mantiene una plataforma web para facilitar la visualización y planificación del pensum académico del Politécnico Colombiano Jaime Isaza Cadavid.
 
+![Vista del Pensum Interactivo](docs/preview.png)
+
 # Índice
 1. [Características del pensum](#características-del-pensum)
 2. [TODO](#todo)
