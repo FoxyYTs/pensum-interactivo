@@ -57,17 +57,19 @@
 		["Ética y Ciudadanía", "CBS00525", 2, 2, "FC", [], "A"]
 	],
 	"s8": [
-		["Programación Distribuida y Paralela", "ING01206", 2, 4, "IA", ["ING01569", "ING01556"], "A"],
-		["Gestión de Redes y Servicios", "ING01209", 3, 5, "IA", ["ING01569"], "A"],
-		["Modelos y Simulación", "ING01210", 3, 5, "IA", ["ING01566"], "A"],
-		["Gestión de Proyectos de TI", "ING01211", 3, 3, "IA", ["ING01208"], "A"],
-		["Ciencia, Tecnología e Innovación", "ING01572", 2, 2, "FC", ["ING01562"], "A"],
 		["Electiva I", "ING01228", 2, 2, "EL", [], "A"],
 		["Electiva II", "ING01229", 2, 2, "EL", [], "A"],
 		["Profundización I", "ING01577", 2, 4, "PROF", [], "A"],
 		["Profundización II", "ING01578", 2, 4, "PROF", [], "A"]
 	],
 	"s9": [
+		["Programación Distribuida y Paralela", "ING01206", 2, 4, "IA", ["ING01569", "ING01556"], "A"],
+		["Gestión de Redes y Servicios", "ING01209", 3, 5, "IA", ["ING01569"], "A"],
+		["Modelos y Simulación", "ING01210", 3, 5, "IA", ["ING01566"], "A"],
+		["Gestión de Proyectos de TI", "ING01211", 3, 3, "IA", ["ING01208"], "A"],
+		["Ciencia, Tecnología e Innovación", "ING01572", 2, 2, "FC", ["ING01562"], "A"]
+	],
+	"s10": [
 		["Trabajo de Grado", "ING01579", 8, 2, "TG", ["ING01572", "ING01211"], "A"]
 	]
 }
