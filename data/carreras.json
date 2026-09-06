@@ -4,12 +4,28 @@
     "Link": "II"
   },
   {
+    "Nombre": "Ingeniería Informática (Pensum anterior)",
+    "Link": "II-2023",
+    "altVersionOf": "II",
+    "versionLabel": "plan 8210, hasta 2026-1"
+  },
+  {
     "Nombre": "Ingeniería Civil",
     "Link": "IC"
   },
   {
-    "Nombre": "Tecnología en Construcciones Civiles",
+    "Nombre": "Ingeniería Civil (Pensum anterior)",
+    "Link": "IC-2023",
+    "altVersionOf": "IC",
+    "versionLabel": "plan 9511, hasta 2023-2"
+  },
+  {
+    "Nombre": "Tecnología en Construcciones Civiles (Rionegro)",
     "Link": "TCC"
+  },
+  {
+    "Nombre": "Tecnología en Construcciones Civiles (Medellín)",
+    "Link": "TCC-MED"
   },
   {
     "Nombre": "Lic. en Ciencias Sociales",

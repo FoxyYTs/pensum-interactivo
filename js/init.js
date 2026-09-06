@@ -114,10 +114,19 @@ if (params.get('SCT') === "false")
         .then( () => {
             return fetch(new Request(relaPath + "date.txt"))
         }).then(response => {
-            let lastModified = response.headers.get("last-modified")
-            let date = new Date(lastModified)
-            console.log(date)
-            document.getElementById("lastUpdate").textContent = date.toLocaleString()
+            if (!response.ok) throw new Error("date.txt no encontrado")
+            return response.text()
+        }).then(text => {
+            // date.txt contiene el timestamp del build en milisegundos, como texto.
+            // Se lee del contenido y no de un header HTTP (Last-Modified no siempre
+            // se preserva en todos los hostings/CDNs).
+            let timestamp = parseInt(text.trim(), 10)
+            if (!timestamp) throw new Error("date.txt vacío o inválido")
+            document.getElementById("lastUpdate").textContent = new Date(timestamp).toLocaleString()
+        }).catch(err => {
+            console.warn("No se pudo determinar la fecha de última actualización:", err)
+            let el = document.getElementById("lastUpdate")
+            if (el) el.textContent = "No disponible"
         })
     let bigPromise = Promise.all(promises).then((datas) => {
         welcomeTexts = datas.pop()[texts]
@@ -151,6 +160,7 @@ if (params.get('SCT') === "false")
                 if (career['Link'] === carr) {
                     fullCareerName = career["Nombre"]
                     homologatedTo = career["homologatedTo"]
+                    updateVersionBanner(career, careers)
                     welcomeTexts["welcomeTitle"] = welcomeTexts["welcomeTitle"].replace("CARRERA", career['Nombre'])
                     $('.carrera').text(career['Nombre'])
                     if (mallaPersonal) {
@@ -182,7 +192,9 @@ if (params.get('SCT') === "false")
                     let selector = document.getElementById("careerSelector")
                     selector.style.display = "block"
                     let buttonsDiv = document.getElementById("careerButtons")
-                    careers.forEach(function(career) {
+                    // Las versiones antiguas de un pensum (altVersionOf) no se ofrecen aquí:
+                    // solo se llega a ellas desde el aviso de versión o el menú "Carreras".
+                    careers.filter(career => !career.altVersionOf).forEach(function(career) {
                         let btn = document.createElement("button")
                         btn.className = "btn btn-primary m-2"
                         btn.textContent = career.Nombre
@@ -191,6 +203,7 @@ if (params.get('SCT') === "false")
                             carr = career.Link
                             fullCareerName = career.Nombre
                             homologatedTo = career["homologatedTo"] || null
+                            updateVersionBanner(career, careers)
                             localStorage.setItem("currentCarreer", carr)
                             let url = new URL(window.location.href)
                             url.searchParams.set('m', carr)
@@ -227,6 +240,35 @@ function removeHomologatedPopUp() {
         d3.select(this).remove();
     })
 }
+// Muestra un aviso cuando la carrera actual tiene otra versión de pensum asociada
+// (por ejemplo, un pensum vigente y uno anterior que la universidad reemplazó).
+// `career` marca esa relación con altVersionOf: el Link del pensum vigente que reemplaza al suyo.
+function updateVersionBanner(career, careers) {
+    let banner = document.getElementById("versionBanner")
+    if (!banner || contact) return
+    let text = document.getElementById("versionBannerText")
+    let link = document.getElementById("versionBannerLink")
+    let label = career["versionLabel"] ? " (" + career["versionLabel"] + ")" : ""
+    if (career["altVersionOf"]) {
+        let current = careers.find(c => c["Link"] === career["altVersionOf"])
+        if (!current) { banner.classList.add("d-none"); return }
+        text.textContent = "Estás viendo un pensum anterior" + label + ", que ya no está vigente."
+        link.textContent = "Ver pensum actual →"
+        link.setAttribute("href", relaPath + '?m=' + current["Link"])
+        banner.classList.remove("d-none")
+        return
+    }
+    let older = careers.find(c => c["altVersionOf"] === career["Link"])
+    if (older) {
+        text.textContent = "Este es el pensum vigente" + label + "."
+        link.textContent = "¿Ingresaste antes? Ver pensum anterior →"
+        link.setAttribute("href", relaPath + '?m=' + older["Link"])
+        banner.classList.remove("d-none")
+        return
+    }
+    banner.classList.add("d-none")
+}
+
 function removePopUp() {
     d3.select("body").style("overflow", "initial")
     d3.selectAll(".overlay").style("-webkit-backdrop-filter", "blur(0px) contrast(100%)");

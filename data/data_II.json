@@ -1,76 +1,73 @@
 {
 	"s1": [
-		["Lengua Materna", "CBS00030", 2, 4, "CB", [], "A"],
-		["Cálculo Diferencial", "CBS00379", 3, 3, "CB", [], "A"],
-		["Introducción al Área Profesional", "ING01178", 3, 3, "CBI", [], "A"],
+		["Matemáticas", "CBS00501", 3, 3, "CB", [], "A"],
+		["Habilidades Comunicativas I", "CBS00505", 2, 2, "FC", [], "A"],
+		["Humanidades I", "CBS00506", 2, 2, "FC", [], "A"],
 		["Algoritmos y Programación 1", "ING01179", 4, 6, "CBI", [], "A"],
-		["Matemáticas Discretas 1", "ING01180", 4, 4, "CBI", [], "A"],
-		["Humanidades 1", "CBS00031", 2, 4, "FC", [], "A"]
+		["Matemáticas Discretas", "ING01549", 3, 4, "CBI", [], "A"],
+		["Introducción al Área Profesional", "ING01550", 2, 4, "CBI", [], "A"]
 	],
 	"s2": [
-		["Física del Movimiento", "CBS00079", 4, 6, "CB", ["CBS00379"], "A"],
-		["Cálculo Integral", "CBS00382", 3, 3, "CB", ["CBS00379"], "A"],
-		["Geometría Vectorial", "CBS00414", 3, 3, "CB", [], "A"],
-		["Algoritmos y Programación 2", "ING01181", 4, 4, "CBI", ["ING01179"], "A"],
-		["Matemáticas Discretas 2", "ING01182", 4, 4, "CBI", ["ING01180"], "A"],
+		["Geometría Vectorial", "CBS00502", 3, 3, "CB", [], "A"],
+		["Cálculo Diferencial", "CBS00509", 3, 3, "CB", ["CBS00501"], "A"],
+		["Física del Movimiento", "CBS00510", 3, 3, "CB", ["CBS00501"], "A"],
+		["Laboratorio de Física del Movimiento", "CBS00511", 1, 2, "CB", [], "A"],
+		["Habilidades Comunicativas II", "CBS00512", 2, 2, "FC", ["CBS00505"], "A"],
+		["Algoritmos y Programación 2", "ING01181", 4, 6, "CBI", ["ING01179"], "A"],
 		["Deporte, Arte y Recreación", "EFD00533", 1, 2, "FC", [], "A"]
 	],
 	"s3": [
-		["Electricidad y Magnetismo", "CBS00014", 4, 6, "CB", ["CBS00079"], "A"],
-		["Álgebra Lineal", "CBS00408", 3, 3, "CB", ["CBS00414"], "A"],
-		["Cálculo de Varias Variables", "CBS00415", 3, 3, "CB", ["CBS00382"], "A"],
-		["Algoritmos y Programación 3", "ING01183", 3, 5, "CBI", ["ING01181"], "A"],
-		["Taller de Lenguajes de Programación 1", "ING01184", 2, 4, "CBI", ["ING01181"], "A"],
-		["Semiótica Informática", "ING01185", 2, 4, "CBI", ["ING01178"], "A"],
-		["Pedagogía Constitucional", "CBS00097", 1, 2, "FC", [], "A"]
+		["Humanidades II", "CBS00513", 2, 2, "FC", ["CBS00506"], "A"],
+		["Cálculo Integral", "CBS00514", 3, 3, "CB", ["CBS00509"], "A"],
+		["Álgebra Lineal", "ING01551", 3, 3, "CB", ["CBS00502"], "A"],
+		["Algoritmos y Programación III", "ING01552", 3, 4, "CBI", ["ING01181"], "A"],
+		["Taller de Lenguajes de Programación I", "ING01553", 3, 4, "CBI", ["ING01181"], "A"],
+		["Bases de Datos I", "ING01554", 3, 6, "IA", ["ING01549"], "A"]
 	],
 	"s4": [
-		["Ecuaciones Diferenciales", "CBS00412", 3, 3, "CB", ["CBS00415"], "A"],
-		["Electrónica Digital", "ING00078", 4, 6, "CBI", ["CBS00014"], "A"],
-		["Algoritmos y Programación 4", "ING01186", 3, 5, "CBI", ["ING01183"], "A"],
-		["Análisis de Software", "ING01187", 4, 4, "IA", ["ING01185", "ING01184"], "A"],
-		["Bases de Datos 1", "ING01188", 4, 6, "IA", ["ING01182"], "A"]
+		["Cálculo de Varias Variables", "CBS00415", 3, 3, "CB", ["CBS00514"], "A"],
+		["Estadística", "CBS00516", 3, 3, "CBI", ["CBS00514"], "A"],
+		["Programación Lineal", "ING01558", 3, 3, "CBI", ["ING01551"], "A"],
+		["Análisis de Software", "ING01555", 3, 4, "IA", ["ING01553"], "A"],
+		["Taller de Lenguajes de Programación II", "ING01556", 3, 4, "CBI", ["ING01553"], "A"],
+		["Algoritmos y Programación IV", "ING01557", 3, 4, "CBI", ["ING01552"], "A"]
 	],
 	"s5": [
-		["Taller de Lenguajes de Programación 2", "ING01189", 2, 4, "CBI", ["ING01186"], "A"],
-		["Diseño de Software", "ING01190", 4, 4, "IA", ["ING01187"], "A"],
-		["Arquitectura de Hardware", "ING01191", 4, 6, "CBI", ["ING00078"], "A"],
-		["Teoría de Lenguajes y Compiladores", "ING01192", 4, 4, "IA", ["ING01182", "ING01184"], "A"],
-		["Estadística Aplicada", "ING01193", 4, 6, "CBI", ["CBS00382"], "A"]
+		["Ecuaciones Diferenciales", "CBS00518", 3, 3, "CB", ["CBS00415"], "A"],
+		["Diseño de Software", "ING01559", 3, 4, "IA", ["ING01555", "ING01554"], "A"],
+		["Teoría de Lenguajes y Compiladores", "ING01560", 3, 4, "IA", ["ING01549", "ING01553"], "A"],
+		["Bases de Datos II", "ING01561", 3, 6, "IA", ["ING01554"], "A"],
+		["Estadística Inferencial", "ING01562", 3, 3, "CBI", ["CBS00516"], "A"],
+		["Fundamentos de Circuitos y Dispositivos Electrónicos", "ING01563", 3, 6, "CBI", ["CBS00510", "CBS00511"], "A"]
 	],
 	"s6": [
-		["Proyecto de Construcción de SW", "ING01194", 2, 4, "IA", ["ING01186", "ING01190"], "A"],
-		["Bases de Datos 2", "ING01195", 3, 5, "IA", ["ING01188"], "A"],
-		["Sistemas Operativos", "ING01196", 4, 6, "IA", ["ING01191"], "A"],
-		["Emprendimiento Empresarial TI", "ING01197", 2, 2, "IA", [], "A"],
-		["Teoría de la Información", "ING01198", 3, 6, "IA", ["ING01193"], "A"],
-		["Análisis Numérico", "ING01199", 4, 4, "CBI", ["CBS00408", "CBS00412"], "A"]
+		["Proyecto Integrador", "ING01207", 2, 4, "IA", ["ING01559"], "A"],
+		["Electrónica Digital y Arquitectura de Hardware", "ING01564", 3, 6, "CBI", ["ING01563"], "A"],
+		["Métodos Numéricos", "ING01565", 3, 4, "CBI", ["ING01551", "CBS00518"], "A"],
+		["Investigación de Operaciones", "ING01566", 3, 3, "IA", ["ING01551", "ING01562"], "A"],
+		["Teoría de la Información", "ING01567", 3, 4, "IA", ["ING01562"], "A"]
 	],
 	"s7": [
-		["Inteligencia Artificial", "ING01200", 2, 4, "IA", ["ING01186", "ING01199"], "A"],
-		["Pruebas y Gestión de la Configuración", "ING01201", 2, 4, "IA", ["ING01194"], "A"],
-		["Redes de Comunicaciones", "ING01202", 4, 6, "IA", ["ING01198"], "A"],
-		["Investigación de Operaciones", "ING01203", 4, 6, "IA", ["CBS00408"], "A"],
-		["Metodología de la Investigación", "ING01204", 2, 2, "IA", ["ING01193"], "A"],
-		["Sistemas y Organizaciones", "ING01205", 2, 2, "IA", [], "A"],
-		["Ecología", "CAG00701", 1, 2, "FC", [], "A"]
+		["Pruebas y Gestión de la Configuración", "ING01201", 2, 4, "IA", ["ING01559"], "A"],
+		["Formulación y Evaluación de Proyectos de TI", "ING01208", 3, 3, "IA", ["ING01207"], "A"],
+		["Sistemas Operativos", "ING01568", 3, 6, "IA", ["ING01564"], "A"],
+		["Redes de Comunicación", "ING01569", 3, 6, "IA", ["ING01567"], "A"],
+		["Inteligencia Artificial", "ING01570", 3, 4, "IA", ["ING01557", "ING01565"], "A"],
+		["Semiótica Informática", "ING01571", 2, 4, "CBI", ["ING01554", "ING01556"], "A"],
+		["Ética y Ciudadanía", "CBS00525", 2, 2, "FC", [], "A"]
 	],
 	"s8": [
-		["Programación Distribuida y Paralela", "ING01206", 2, 4, "IA", ["ING01202", "ING01189"], "A"],
-		["Proyecto Integrador", "ING01207", 2, 4, "IA", ["ING01194"], "A"],
-		["Formulación y Evaluación de Proyectos de TI", "ING01208", 3, 3, "IA", ["ING01194", "ING01205"], "A"],
-		["Gestión de Redes y Servicios", "ING01209", 3, 5, "IA", ["ING01202"], "A"],
-		["Modelos y Simulación", "ING01210", 3, 5, "IA", ["ING01203"], "A"],
-		["Humanidades 2", "CBS00032", 2, 4, "FC", [], "A"]
+		["Programación Distribuida y Paralela", "ING01206", 2, 4, "IA", ["ING01569", "ING01556"], "A"],
+		["Gestión de Redes y Servicios", "ING01209", 3, 5, "IA", ["ING01569"], "A"],
+		["Modelos y Simulación", "ING01210", 3, 5, "IA", ["ING01566"], "A"],
+		["Gestión de Proyectos de TI", "ING01211", 3, 3, "IA", ["ING01208"], "A"],
+		["Ciencia, Tecnología e Innovación", "ING01572", 2, 2, "FC", ["ING01562"], "A"],
+		["Electiva I", "ING01228", 2, 2, "EL", [], "A"],
+		["Electiva II", "ING01229", 2, 2, "EL", [], "A"],
+		["Profundización I", "ING01577", 2, 4, "PROF", [], "A"],
+		["Profundización II", "ING01578", 2, 4, "PROF", [], "A"]
 	],
 	"s9": [
-		["Gestión de Proyectos de TI", "ING01211", 3, 3, "IA", ["ING01208"], "A"],
-		["Ética", "CBS00102", 1, 2, "FC", [], "A"],
-		["Materia de Profundización", "II-PROF1", 3, 3, "PROF", [], "A"],
-		["Electiva Libre 1", "II-EL1", 2, 2, "EL", [], "A"],
-		["Electiva Libre 2", "II-EL2", 2, 2, "EL", [], "A"]
-	],
-	"s10": [
-		["Trabajo de Grado", "ING01221", 7, 2, "TG", ["ING01211", "ING01204"], "A"]
+		["Trabajo de Grado", "ING01579", 8, 2, "TG", ["ING01572", "ING01211"], "A"]
 	]
 }

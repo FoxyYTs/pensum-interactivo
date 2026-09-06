@@ -1,6 +1,14 @@
 # Changelog
 Changelog del proyecto. No es la gran cosa pero *podría* ser útil a futuro
 
+# [1.6.6]
+- Soporte para tener varias versiones de un mismo pensum (por ej. el vigente y el anterior a un cambio de malla), enlazadas mediante `altVersionOf` en `carreras.json`
+- Al ver un pensum con otra versión asociada, se muestra un aviso con link para saltar entre la versión vigente y la anterior
+- La pantalla de bienvenida (primera visita) ya no ofrece pensums antiguos como opción, solo el vigente de cada carrera
+- Se actualizó la malla de Ingeniería Informática al plan 8210 → **8212**; el plan anterior queda disponible identificado como "Pensum anterior" (`II-2023`)
+- Se agregó la malla de Tecnología en Construcciones Civiles de la sede Medellín (plan 0113) como variante aparte de la de Rionegro (plan 0112, la que ya estaba en el sitio como `TCC`)
+- Se agregó el pensum anterior de Ingeniería Civil (plan 9511, hasta 2023-2) como `IC-2023`, enlazado a `IC` (plan 9512 vigente)
+
 # [1.6.5]
 - Se agregó la malla que rige desde 2025 de Ingeniería Civil Informática
 - Se agregó la malla que rige desde 2025 de Ingeniería Comercial
