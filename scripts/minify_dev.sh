@@ -12,5 +12,11 @@ echo ./js/min4.js
 
 
 
+# Archivo con la fecha del build, en milisegundos desde epoch (usado para
+# mostrar "Última actualización" en el footer). Se lee como contenido de
+# texto, no como header HTTP, para no depender de que el hosting preserve
+# Last-Modified.
+date +"%s000" | tee date.txt
+
 # moves assets to root
 cp ./assets/* ./

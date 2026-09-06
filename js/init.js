@@ -114,10 +114,19 @@ if (params.get('SCT') === "false")
         .then( () => {
             return fetch(new Request(relaPath + "date.txt"))
         }).then(response => {
-            let lastModified = response.headers.get("last-modified")
-            let date = new Date(lastModified)
-            console.log(date)
-            document.getElementById("lastUpdate").textContent = date.toLocaleString()
+            if (!response.ok) throw new Error("date.txt no encontrado")
+            return response.text()
+        }).then(text => {
+            // date.txt contiene el timestamp del build en milisegundos, como texto.
+            // Se lee del contenido y no de un header HTTP (Last-Modified no siempre
+            // se preserva en todos los hostings/CDNs).
+            let timestamp = parseInt(text.trim(), 10)
+            if (!timestamp) throw new Error("date.txt vacío o inválido")
+            document.getElementById("lastUpdate").textContent = new Date(timestamp).toLocaleString()
+        }).catch(err => {
+            console.warn("No se pudo determinar la fecha de última actualización:", err)
+            let el = document.getElementById("lastUpdate")
+            if (el) el.textContent = "No disponible"
         })
     let bigPromise = Promise.all(promises).then((datas) => {
         welcomeTexts = datas.pop()[texts]
