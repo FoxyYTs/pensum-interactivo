@@ -60,17 +60,20 @@
 		["Proyecto Integrador", "ING01207", 2, 4, "IA", ["ING01194"], "A"],
 		["Formulación y Evaluación de Proyectos de TI", "ING01208", 3, 3, "IA", ["ING01194", "ING01205"], "A"],
 		["Gestión de Redes y Servicios", "ING01209", 3, 5, "IA", ["ING01202"], "A"],
+		["Profundización 1", "II2023-PROF1", 3, 5, "PROF", [], "A"],
 		["Modelos y Simulación", "ING01210", 3, 5, "IA", ["ING01203"], "A"],
 		["Humanidades 2", "CBS00032", 2, 4, "FC", [], "A"]
 	],
 	"s9": [
 		["Gestión de Proyectos de TI", "ING01211", 3, 3, "IA", ["ING01208"], "A"],
-		["Ética", "CBS00102", 1, 2, "FC", [], "A"],
-		["Materia de Profundización", "II-PROF1", 3, 3, "PROF", [], "A"],
-		["Electiva Libre 1", "II-EL1", 2, 2, "EL", [], "A"],
-		["Electiva Libre 2", "II-EL2", 2, 2, "EL", [], "A"]
+		["Profundización 2", "II2023-PROF2", 3, 5, "PROF", [], "A"],
+		["Electiva 1", "II2023-EL1", 2, 2, "EL", [], "A"],
+		["Electiva 2", "II2023-EL2", 2, 2, "EL", [], "A"],
+		["Ética", "CBS00102", 1, 2, "FC", [], "A"]
 	],
 	"s10": [
-		["Trabajo de Grado", "ING01221", 7, 2, "TG", ["ING01211", "ING01204"], "A"]
+		["Trabajo de Grado", "ING01221", 7, 2, "TG", ["ING01211", "ING01204"], "A"],
+		["Profundización 3", "II2023-PROF3", 2, 4, "PROF", [], "A"],
+		["Electiva 3", "II2023-EL3", 2, 2, "EL", [], "A"]
 	]
 }
