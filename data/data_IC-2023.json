@@ -1,0 +1,76 @@
+{
+	"s1": [
+		["Lengua Materna", "CBS00030", 2, 4, "FC", [], "A"],
+		["Geometría", "CBS00375", 3, 3, "CB", [], "A"],
+		["Álgebra y Trigonometría", "CBS00406", 3, 3, "CB", [], "A"],
+		["Química General", "CBS00407", 4, 5, "CB", [], "A"],
+		["Introducción al Área Profesional", "ING01000", 2, 2, "CBI", [], "A"],
+		["Pedagogía Constitucional", "CBS00097", 1, 2, "FC", [], "A"]
+	],
+	"s2": [
+		["Humanidades 1 (Cultura Contemporánea)", "CBS00031", 2, 4, "FC", [], "A"],
+		["Cálculo Diferencial", "CBS00379", 3, 3, "CB", ["CBS00406"], "A"],
+		["Física del Movimiento", "CBS00405", 4, 5, "CB", ["CBS00406"], "A"],
+		["Álgebra Lineal", "CBS00408", 3, 3, "CB", ["CBS00406"], "A"],
+		["Dibujo Asistido por Computador", "ING01113", 2, 4, "CBI", [], "A"],
+		["Fundamentos de Programación", "ING01114", 3, 4, "CBI", [], "A"]
+	],
+	"s3": [
+		["Cálculo Integral", "CBS00382", 3, 3, "CB", ["CBS00379"], "A"],
+		["Física de Ondas y Óptica", "CBS00409", 4, 5, "CB", ["CBS00405"], "A"],
+		["Topografía", "ING01003", 4, 8, "CBI", ["ING01113", "CBS00375"], "A"],
+		["Geología para Ingenieros", "ING01131", 3, 4, "CBI", [], "A"],
+		["Materiales de Ingeniería", "ING01132", 3, 4, "CBI", ["CBS00407"], "A"]
+	],
+	"s4": [
+		["Cálculo Multivariado", "CBS00410", 3, 3, "CB", ["CBS00382"], "A"],
+		["Estadística y Probabilidades", "CBS00411", 3, 3, "CB", ["CBS00382"], "A"],
+		["Diseño Geométrico de Vías", "ING00116", 4, 8, "IA", ["ING01003"], "A"],
+		["Estática", "ING01116", 3, 4, "CBI", ["CBS00405"], "A"],
+		["Geomática", "ING01133", 3, 4, "CBI", ["ING01003"], "A"],
+		["Deporte, Arte y Recreación", "EFD00533", 1, 2, "FC", [], "A"]
+	],
+	"s5": [
+		["Ecuaciones Diferenciales", "CBS00412", 3, 3, "CB", ["CBS00382"], "A"],
+		["Mecánica de Fluidos", "ING01115", 3, 4, "CBI", ["CBS00410"], "A"],
+		["Mecánica de Sólidos", "ING01134", 4, 6, "CBI", ["ING01116"], "A"],
+		["Construcción de Edificaciones", "ING01135", 3, 4, "IA", ["ING01132"], "A"],
+		["Construcción de Vías", "ING01136", 3, 4, "IA", ["ING00116"], "A"]
+	],
+	"s6": [
+		["Mecánica de Suelos", "ING01005", 4, 6, "IA", ["ING01131"], "A"],
+		["Costos y Programación de Obras Civiles", "ING01124", 3, 3, "IA", ["ING01135"], "A"],
+		["Hidrología", "ING01137", 3, 4, "IA", ["ING01133"], "A"],
+		["Análisis Clásico de Estructuras", "ING01138", 3, 4, "IA", ["ING01134"], "A"],
+		["Ingeniería de Tránsito", "ING01139", 3, 4, "IA", [], "A"],
+		["Métodos Numéricos", "ING01222", 3, 3, "CBI", ["CBS00412"], "A"]
+	],
+	"s7": [
+		["Humanidades 2 (Cultura Política)", "CBS00032", 2, 4, "FC", [], "A"],
+		["Metodología de la Investigación", "CBS00384", 2, 2, "CB", [], "A"],
+		["Interventoría de Obras Civiles", "ING01127", 3, 3, "IA", ["ING01124"], "A"],
+		["Hidráulica", "ING01140", 6, 8, "IA", ["ING01115"], "A"],
+		["Cimentaciones", "ING01141", 3, 4, "IA", ["ING01005"], "A"],
+		["Análisis Matricial de Estructuras", "ING01142", 3, 4, "IA", ["ING01138"], "A"]
+	],
+	"s8": [
+		["Pavimentos", "ING00114", 4, 6, "IA", ["ING01005"], "A"],
+		["Diseño de Estructuras en Hormigón I", "ING01143", 4, 6, "IA", ["ING01138"], "A"],
+		["Gestión Ambiental", "ING01144", 3, 3, "PROF", ["ING01135"], "A"],
+		["Línea de Profundización 1", "IC2023-PROF1", 3, 3, "PROF", [], "A"],
+		["Línea de Profundización 2", "IC2023-PROF2", 3, 3, "PROF", [], "A"]
+	],
+	"s9": [
+		["Acueductos y Alcantarillados", "ING01145", 3, 4, "IA", ["ING01140"], "A"],
+		["Diseño de Estructuras en Hormigón II", "ING01146", 3, 4, "IA", ["ING01143"], "A"],
+		["Formulación y Evaluación de Proyectos", "ING01147", 3, 3, "IA", ["CBS00384"], "A"],
+		["Línea de Profundización 3", "IC2023-PROF3", 3, 3, "PROF", [], "A"],
+		["Ética", "CBS00102", 1, 2, "FC", [], "A"]
+	],
+	"s10": [
+		["Emprendimiento e Innovación", "ING01148", 3, 3, "IA", [], "A"],
+		["Electiva Libre 1", "IC2023-EL1", 3, 3, "EL", [], "A"],
+		["Electiva Libre 2", "IC2023-EL2", 3, 3, "EL", [], "A"],
+		["Trabajo de Grado", "ING01176", 3, 2, "TG", ["CBS00384"], "A"]
+	]
+}

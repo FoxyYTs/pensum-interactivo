@@ -89,6 +89,30 @@ Otra forma es crear o editar un pensum con la [generadora de pensums](personaliz
 
 *Nota*: Es recomendable hacer el proceso en un computador.
 
+### Cuando la universidad reemplaza un pensum
+
+Si la universidad actualiza el pensum de una carrera, **no se sobrescriben** los archivos `data_CARR.json` / `colors_CARR.json` existentes: se agregan unos nuevos (por ej. `data_INF2026.json`) y se registra la carrera vigente y la anterior como dos entradas en `data/carreras.json`, enlazadas con `altVersionOf`:
+
+```json5
+[
+  {
+    "Nombre": "Ingeniería Informática",
+    "Link": "INF2026"
+  },
+  {
+    "Nombre": "Ingeniería Informática (pensum anterior)",
+    "Link": "INF",
+    "altVersionOf": "INF2026",
+    "versionLabel": "vigente hasta 2025"
+  }
+]
+```
+
+* ***Link*** de la entrada vigente: el que deben usar quienes ingresan con el nuevo pensum.
+* ***altVersionOf***: solo en la entrada del pensum reemplazado; es el `Link` de la entrada vigente.
+* ***versionLabel*** *(opcional)*: texto corto que se muestra junto al aviso de versión (por ej. `"vigente hasta 2025"`).
+
+Con esto, el sitio muestra automáticamente un aviso arriba del pensum ("Este es el pensum vigente… / Estás viendo un pensum anterior…") con un link para saltar a la otra versión, y la pantalla de bienvenida (primera visita) solo ofrece la carrera vigente para no confundir a quienes recién ingresan.
 
 ## Probar pensum
 
