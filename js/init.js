@@ -146,6 +146,7 @@ if (params.get('SCT') === "false")
         if (contact)
             goToContact.classList.add("active")
         goToContact.setAttribute("href", relaPath + "contact/")
+        document.getElementById("contactFooter").setAttribute("href", relaPath + "contact/")
         home.setAttribute("href", relaPath + '?m=' + carr)
         return fetch(relaPath + '/data/carreras.json')
     }).then(response => response.json()).then((careers,) => {
